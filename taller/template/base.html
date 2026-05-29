@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Viteri | Landing Page</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+        }
+
+        header{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            background:linear-gradient(135deg,#2563eb,#7c3aed);
+            padding:20px;
+        }
+
+        .hero h1{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:22px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:15px 35px;
+            background:white;
+            color:#2563eb;
+            text-decoration:none;
+            border-radius:10px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#e2e8f0;
+            transform:scale(1.05);
+        }
+
+        section{
+            padding:80px 10%;
+        }
+
+        .about{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:40px;
+            align-items:center;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:30px;
+            border-radius:15px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .info p{
+            margin:10px 0;
+            font-size:18px;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:#020617;
+        }
+
+        @media(max-width:768px){
+            .hero h1{
+                font-size:40px;
+            }
+
+            .about{
+                grid-template-columns:1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Hola, soy Marco Viteri</h1>
+            <p>Desarrollador Web | HTML | CSS | Python</p>
+
+            <a href="#informacion" class="btn">Ver Información</a>
+        </div>
+    </header>
+
+    <section id="informacion">
+        <div class="about">
+
+            <div class="card">
+                <h2>Sobre mí</h2>
+                <br>
+
+                <p>
+                    Soy Marco Salvathore Viteri Soria, apasionado por el desarrollo web
+                    y la creación de páginas modernas y responsivas.
+                </p>
+            </div>
+
+            <div class="card info">
+                <h2>Información Personal</h2>
+                <br>
+
+                <p><strong>Nombre:</strong> Marco Salvathore Viteri Soria</p>
+
+                <p><strong>Correo:</strong> mviteris3@gmail.com</p>
+
+                <p><strong>Número:</strong> 1213131213</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="card" style="text-align:center;">
+            <h2>Servicios</h2>
+            <br>
+
+            <p>✔ Desarrollo Web</p>
+            <p>✔ Landing Pages</p>
+            <p>✔ HTML & CSS</p>
+            <p>✔ Proyectos en Python</p>
+
+            <br>
+
+            <a href="#" class="btn">Contactar</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Marco Salvathore Viteri Soria</p>
+    </footer>
+
+</body>
+</html>
